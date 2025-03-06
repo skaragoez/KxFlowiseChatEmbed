@@ -14,7 +14,8 @@ export const Avatar = (props: { initialAvatarSrc?: string }) => {
     <Show when={isNotEmpty(avatarSrc())} keyed fallback={<DefaultAvatar />}>
       <figure
         class={
-          'bg-[rgba(4, 52, 81, 1)] flex justify-center items-center rounded-full text-white relative flex-shrink-0 ' + (isMobile() ? 'w-6 h-6 text-sm' : 'w-10 h-10 text-xl')
+          'bg-[rgba(4, 52, 81, 1)] flex justify-center items-center rounded-full text-white relative flex-shrink-0 ' +
+          (isMobile() ? 'w-6 h-6 text-sm' : 'w-10 h-10 text-xl')
         }
       >
         <img src={avatarSrc()} alt="Bot avatar" class="rounded-full object-cover w-full h-full" />
